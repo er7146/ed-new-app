@@ -2,7 +2,7 @@
 <html>
 <head>
   <title>Moschino-App</title>
-  <%= stylesheet_link_tag    "application" , "bootstrap" , media: "all", "data-turbolinks-track" => true %>
+  <%= stylesheet_link_tag    "application" , media: "all", "data-turbolinks-track" => true %>
   <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
   <%= csrf_meta_tags %>
 </head>
@@ -11,5 +11,10 @@
 <%= yield %>
 
 </body>
-<footer> <p>©2014</p> </footer>
+<footer>
+<div class="row">
+  <div class="col-md-8"><br><p>©2014 EZ•PRINT</p> </div>
+  <div class="col-md-4"><img src="https://dl.dropboxusercontent.com/u/2299490/292292/imgs/Credit-Cards.png" width="200" height="auto" alt="credit_cards"></div>
+</div>
+</footer>
 </html>

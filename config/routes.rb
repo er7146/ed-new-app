@@ -1,5 +1,9 @@
 EdNewApp::Application.routes.draw do
-  get  "/"          => "main#root"
+  get  "/"                   => "main#root"
+  get "/login"               => "main#login"
+  get "/flyer-quote"         => "main#flyer-quote"
+  get "/biz-card-quote"      => "main#biz-card-quote"
+  get "/postcard-quote"      => "main#postcard-quote"
   end
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

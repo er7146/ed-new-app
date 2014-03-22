@@ -1,0 +1,61 @@
+<div class="row">
+<div class="col-md-6"><nav class="navbar navbar-default" role="navigation">
+  <div class="container-fluid">
+  <ul class="nav navbar-nav">
+  <li><a href="/">EZ•PRINT</a></li>
+  <li><a href="#about">About</a></li>
+  <li><a href="#products">Products</a></li>
+</ul>
+</div></div>
+  <div class="col-md-6">
+    <form class="form-inline" role="form">
+  <div class="form-group">
+    <div class="form-group col-sm-8">
+    <label class="sr-only" for="exampleInputEmail2">Email</label>
+    <input type="email" class="form-control" id="exampleInputEmail2" placeholder="Email">
+  </div>
+  <button type="submit" class="btn btn-default">Sign in</button>
+    </div>
+  </form>
+    </div>
+  </div>
+
+</nav>
+<br>
+<div class="row">
+  <div class="col-md-6"><h2>Postcards</h2><br>
+  <img src="https://dl.dropboxusercontent.com/u/2299490/292292/imgs/Standard%20Postcards%281%29.png" class="img-responsive" alt="postcards"><br>
+<p><strong>» Bright Gloss</p>
+<p>» Or Elegant Matte Paper</p>
+<p>» Thick and Durable 14pt Cardstock</p>
+<p>» Available in Standard or Custom Size.</strong></p>
+<br>
+<%= submit_tag "Upload Your File & Order Now" , class: "btn btn-primary" %></div>
+  <div class="col-md-6"><div class="well well-lg"><h4>CONFIGURE & PRICE</h4>
+  <%= label_tag "Quantity" %>
+  <%= select_tag "Quantity" , 
+  options_for_select([100, 150, 200 , 500, 1000, 2000, 3000, 4000, 5000, 6000, 7000, 8000, 9000, 10000, 15000, 20000, 25000, 30000, 35000, 40000, 45000, 50000, 55000, 60000, 65000, 70000, 75000, 80000, 85000, 90000, 95000, 100000  ], ), prompt: 250 ,
+  class: "form-control" %><br>
+  <%= label_tag "Size" %>
+  <%= select_tag "Size" , 
+  options_for_select(["4.25 x 6 inches", "5 x 7 inches" , "5.5 x 8.5 inches" , "6 x 9 inches" , "6 x 11 inches"], ), prompt: "4 x 6 inches" ,
+  class: "form-control" %><br>
+  <%= label_tag "Paper_type" %>
+  <%= select_tag "Paper" , 
+  options_for_select(["14 pt. Cardstock Matte", "13 pt. Cardstock Uncoated" , "12 pt. Cardstock Gloss Front, Uncoated Back" ], ), prompt: "14 pt. Cardstock Gloss" ,
+  class: "form-control" %><br>
+  <%= label_tag "Printed_side" %>
+  <%= select_tag "printed-side" , 
+  options_for_select(["Front and Back" ], ), prompt: "Front Only",
+  class: "form-control" %><br>
+  <%= label_tag "Ships_in" %>
+  <%= select_tag "ships-in" , 
+  options_for_select(["2 Business Days" , "1 Business Day"], ), prompt: "3 Business Days" ,
+  class: "form-control" %><br>
+  <%= submit_tag "Get Quote" , class: "btn btn-primary" %><br><br>
+  <b>Printing cost: $ 49.80</b>
+  </div></div>
+</div>
+<br>
+
+
