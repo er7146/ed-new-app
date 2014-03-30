@@ -1,0 +1,49 @@
+<div class="row">
+  <div class="col-md-6">
+    <h2>Flyers</h2><br>
+      <%= image_tag "Business-Flyers.png" , class: "img-responsive" , alt: "flyers" %><br>
+        <p><strong>
+           » Printed on vibrant gloss, elegant matte paper</p>
+        <p>» Writable uncoated paper </p>
+        <p>» Variety of folding options</p>
+        <p>» Unique custom sizes available</p>
+        <p>» Print with confidence
+        <p>» Free file check and proof. </strong></p>
+        <br>
+  <table border="0">
+   <tr>
+      <th>Order id:</th>
+      <th>Printing Cost:</th>
+      <th>Created:</th>
+   </tr>
+           @quote.each do |quote| 
+
+   <tr>
+      <td> quote.id </td>
+      <td>$ "%.2f" % quote.total_price %> </td>
+      <td> quote.created_at </td>
+   </tr>
+      end 
+  </table><br>
+        <%= big_blue_button("Upload Your File and Order Now") %>
+</div>
+  <!--form -->
+<div class="col-md-6">
+  <div class="well well-lg">
+        <%= form_tag "/flyer-quote" do %>
+   
+      <h4>CONFIGURE & PRICE</h4><br>
+        <%= select_group :Size , ["8.5 x 14 inches" , "11 x 17 inches", "3.5 x 8.5 inches", "4.25 x 5.5 inches" , "5.5 x 8.5 inches"], "8.5 x 11 inches" %>
+        <%= select_group :Paper , ["100 lb. Paper Matte" , "70 lb. Paper Uncoated", "80 lb. Paper Gloss", "10 pt. Cardstock Gloss" , "10 pt. Cardstock Matte"] , "100 lb. Paper Gloss" %>
+        <%= select_group :Folding , ["Half Fold" , "Tri-Fold/Letter Fold", "Z Fold", "Gate Fold" , "Accordion Fold (4 panel)" , "Double Gate Fold" , "Double Parallel Fold" , "French Fold" , "Roll Fold (4 panels)" , "Half Fold Then Tri-Fold (6 panels)"], "None" %> 
+        <%= render partial: "layouts/quantity_form" %>
+        <%= big_blue_button("Get Quote") %><br>
+ 
+        <% end %>
+        <b>Printing cost: $ 107.33</b>
+   </div>
+  </div>
+</div>
+
+
+

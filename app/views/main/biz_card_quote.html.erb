@@ -1,0 +1,27 @@
+<div class="row">
+  <div class="col-md-6">
+    <h2>Business Cards</h2><br>
+      <%= image_tag "biz-cards.png" , class: "img-responsive" , alt: "biz_cards" %><br>
+      <p><strong>
+         » Thick, premium quality cardstock</p>
+      <p>» Vibrant full color printing</p>
+      <p>» Gloss, matte or uncoated finish</p>
+      <p>» Standard, square, slim.</strong></p>
+      <br>
+      <%= big_blue_button("Upload Your File and Order Now") %>
+</div>
+<!-- form -->
+<div class="col-md-6">
+  <div class="well well-lg">
+      <h4>CONFIGURE & PRICE</h4><br>
+        <%= select_group :Size , ["2 x 2 inches, Square", "1.75 x 3.5 inches, Slim"], "2 x 3.5 inches, Standard" %>
+        <%= select_group :Paper_Type , [ "14 pt. Cardstock Matte", "14 pt. Cardstock High Gloss UV", "16 pt. Cardstock Matte", "17 pt. Cardstock Uncoated", "13 pt. Cardstock Uncoated", "12 pt. Cardstock Gloss Front, Uncoated Back" ], "14 pt. Cardstock Gloss" %> 
+        <%= render partial: "layouts/quantity_form" %>
+        <%= big_blue_button("Get Quote") %><br>
+        <b>Printing cost: $ 19.90</b>
+   </div>
+  </div>
+</div>
+
+
+

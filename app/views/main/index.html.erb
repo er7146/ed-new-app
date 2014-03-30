@@ -1,64 +1,16 @@
-<div class="row">
-<div class="col-md-6"><nav class="navbar navbar-default" role="navigation">
-  <div class="container-fluid">
-  <ul class="nav navbar-nav">
-  <li><a href="/">EZ•PRINT</a></li>
-  <li><a href="#about">About</a></li>
-  <li><a href="#products">Products</a></li>
-</ul>
-</div></div>
-  <div class="col-md-6">
-    <form class="form-inline" role="form">
-  <div class="form-group">
-    <div class="form-group col-sm-8">
-    <label class="sr-only" for="exampleInputEmail2">Email</label>
-    <input type="email" class="form-control" id="exampleInputEmail2" placeholder="Email">
-  </div>
-  <button type="submit" class="btn btn-default">Sign in</button>
-    </div>
-  </form>
-    </div>
-  </div>
-
-</nav>
-<div id="myCarousel" class="carousel slide" data-ride="carousel">
-  <!-- Indicators -->
-  <ol class="carousel-indicators">
-    <li data-target="#carousel-myCarousel" data-slide-to="0" class="active"></li>
-    <li data-target="#carousel-myCarousel" data-slide-to="1"></li>
-    <li data-target="#carousel-myCarousel" data-slide-to="2"></li>
-  </ol>
-
-  <!-- Wrapper for slides -->
-  <div class="carousel-inner">
-    <div class="item active">
-      <img src="http://upload.wikimedia.org/wikipedia/commons/6/66/Franklin_the_printer.jpg">
-      <div class="carousel-caption">
-        EZ•PRINT
-      </div>
-    </div>
-      Old Fashion Craftmanship, New Science Technology.
-  </div>
-  <!-- Controls -->
-  <a class="left carousel-control" href="#carousel-myCarousel" data-slide="prev">
-    <span class="glyphicon glyphicon-chevron-left"></span>
-  </a>
-  <a class="right carousel-control" href="#carousel-myCarousel" data-slide="next">
-    <span class="glyphicon glyphicon-chevron-right"></span>
-  </a>
-</div><br>
+<%= render partial: "layouts/carousel" %> <br>
 
 <div class="well well-lg">The Trusted Printer of Choice
-Superior quality printing and great customer service are just some of the 
-reasons why our customers trust us
-with their printing - all backed by our 100% Quality Guarantee!
-
+  Superior quality printing and great customer service are just some of the 
+  reasons why our customers trust us
+  with their printing - all backed by our 100% Quality Guarantee!
 </div><br>
 
 <div class="row">
   <div class="col-sm-6 col-md-4">
     <div class="thumbnail">
-      <img src="https://dl.dropboxusercontent.com/u/2299490/292292/imgs/Business-Flyers%281%29.png" class="img-responsive" alt="flyers">
+      <%= image_tag "Business-Flyers.png" , class: "img-responsive" , alt: "flyers" %>
+       
       <div class="caption">
         <h3>Flyers</h3>
         <p>You can rest assured that your print product will turn out right the first time.</p>
@@ -68,7 +20,7 @@ with their printing - all backed by our 100% Quality Guarantee!
   </div>
   <div class="col-sm-6 col-md-4">
     <div class="thumbnail">
-      <img src="https://dl.dropboxusercontent.com/u/2299490/292292/imgs/biz-cards.png" alt="biz_cards">
+      <%= image_tag "biz-cards.png" , class: "img-responsive" , alt: "biz_cards" %>
       <div class="caption">
         <h3>Business Cards</h3>
         <p>We offer some of the fastest printing turnaround times found online.</p>
@@ -78,7 +30,7 @@ with their printing - all backed by our 100% Quality Guarantee!
   </div>
   <div class="col-sm-6 col-md-4">
     <div class="thumbnail">
-      <img src="https://dl.dropboxusercontent.com/u/2299490/292292/imgs/Standard%20Postcards%281%29.png" alt="postcards">
+      <%= image_tag "Standard Postcards.png" , class: "img-responsive" , alt: "postcards" %>
       <div class="caption">
         <h3>Postcards</h3>
         <p>Superior quality printing at the best possible price.  Always strive for the best!</p>

@@ -1,0 +1,27 @@
+<div class="row">
+  <div class="col-md-6">
+    <h2>Postcards</h2><br>
+      <%= image_tag "Standard Postcards.png" , class: "img-responsive" , alt: "postcards" %><br>
+      <p><strong>
+         » Bright Gloss</p>
+      <p>» Or Elegant Matte Paper</p>
+      <p>» Thick and Durable 14pt Cardstock</p>
+      <p>» Available in Standard or Custom Size.
+      </strong></p>
+      <br><br>
+      <%= big_blue_button("Upload Your File and Order Now") %>
+</div>
+<!-- form -->
+  <div class="col-md-6"><div class="well well-lg">
+    <h4>CONFIGURE & PRICE</h4><br>
+      <%= select_group :Size , ["4.25 x 6 inches", "5 x 7 inches" , "5.5 x 8.5 inches" , "6 x 9 inches" , "6 x 11 inches"], "4 x 6 inches" %>
+      <%= select_group :Paper_Type , [ "14 pt. Cardstock Matte", "13 pt. Cardstock Uncoated" , "12 pt. Cardstock Gloss Front, Uncoated Back" ], "14 pt. Cardstock Gloss" %>  
+      <%= render partial: "layouts/quantity_form" %>
+      <%= big_blue_button("Get Quote") %><br>
+      <b>Printing cost: $ 49.80</b>
+    </div>
+  </div>
+</div>
+<br>
+
+

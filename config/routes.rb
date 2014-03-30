@@ -1,9 +1,14 @@
 EdNewApp::Application.routes.draw do
   get  "/"                   => "main#root"
   get "/login"               => "main#login"
-  get "/flyer-quote"         => "main#flyer-quote"
-  get "/biz-card-quote"      => "main#biz-card-quote"
-  get "/postcard-quote"      => "main#postcard-quote"
+  get "/flyer-quote"         => "main#flyer_quote"
+  post "/flyer-form"         => "main#flyer_quote"
+  get "/list-orders"         => "main#list_orders"
+  get "/biz-card-quote"      => "main#biz_card_quote"
+  get "/postcard-quote"      => "main#postcard_quote"
+  get "/_carousel0"           => "main#carousel0"
+  get "/_carousel1"           => "main#carousel1"
+  get "/_carousel2"           => "main#carousel2"
   end
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

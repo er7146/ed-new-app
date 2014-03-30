@@ -5,3 +5,10 @@
 #
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
+FlyerOrder.create! quantity: 250 ,
+  size: "8.5 x 11 inches" ,
+  paper: "100 lb. Paper Gloss" ,
+  folding: "None" ,
+  printed_side: "Front Only" ,
+  ships_in: "3 Business Days" ,
+  total_price: 107.33

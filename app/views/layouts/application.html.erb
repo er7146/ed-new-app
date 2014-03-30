@@ -7,14 +7,10 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
+<%= render partial: "layouts/navbar" %>
 
 <%= yield %>
 
 </body>
-<footer>
-<div class="row">
-  <div class="col-md-8"><br><p>©2014 EZ•PRINT</p> </div>
-  <div class="col-md-4"><img src="https://dl.dropboxusercontent.com/u/2299490/292292/imgs/Credit-Cards.png" width="200" height="auto" alt="credit_cards"></div>
-</div>
-</footer>
+<%= render partial: "layouts/footer" %>
 </html>
