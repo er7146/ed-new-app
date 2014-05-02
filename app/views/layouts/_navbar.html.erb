@@ -1,31 +1,20 @@
-<div class="row">
-<div class="col-md-6"><nav class="navbar navbar-default" role="navigation">
-  <div class="container-fluid">
-  <ul class="nav navbar-nav">
-  <li><a href="/"><%= image_tag "ezprint-logo.png" %></a></li>
-  <li><a href="#about">About</a></li>
-  <li class="dropdown" >
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown">Products <b class="caret"></b></a>
-            <ul class="dropdown-menu">
-            <li><a href="/flyer-quote">Flyers</a></li>
-            <li class="divider"></li>
-            <li><a href="/biz-cards-quote">Business Cards</a></li>
-            <li class="divider"></li>
-            <li><a href="/postcard-quote">Postcards</a></li>
-          </ul>
-        </li>
-</ul>
-</div></div>
-  <div class="col-md-6">
-    <form class="form-inline" role="form">
-  <div class="form-group">
-    <div class="form-group col-sm-8">
-    <label class="sr-only" for="exampleInputEmail2">Email</label>
-    <input type="email" class="form-control" id="exampleInputEmail2" placeholder="Email">
-  </div>
-  <button type="submit" class="btn btn-default">Sign in</button>
-    </div>
-  </form>
-    </div>
-  </div>
-</nav>
+ 
+     
+       <nav class="navbar navbar-default" role="navigation">
+         <div class="container-fluid">
+            <ul class="nav navbar-nav">
+               <li> <%= link_to (image_tag "ezprint-logo.png", width: 30 , height: "auto", alt: "EZPrint"), "/" %> </li>
+               <li class="active"> <%= link_to "About", "/about" %> </li>
+               <li class="active"> <%= link_to "Products", "/products" %></li>
+               <li ><form class="navbar-form navbar-left" role="search">
+                  <div class="form-group"><input type="text" class="form-control" placeholder="Search">
+                  </div><button type="submit" class="btn btn-default">Submit</button>
+                </form></li>
+                <li class="active"><%= link_to "login", "/login" %> </li>
+            </ul>
+        </div><!-- /.navbar-collapse -->
+       </div> <!-- /.container-fluid -->
+      </nav>
+     
+
+        

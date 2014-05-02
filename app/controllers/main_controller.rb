@@ -1,18 +1,5 @@
 class MainController < ApplicationController
-def root
-    render :index and return
-  end
-  
-def carousel0
-      render :carousel0 and return
-  end
-  
-def carousel1
-      render :carousel1 and return
-  end
-
-def carousel2
-      render :carousel2 and return
+def index
   end
  
   
